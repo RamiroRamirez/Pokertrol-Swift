@@ -8,6 +8,7 @@ def corePods
 	pod 'DKHelper', '~> 2.2.1'
 	pod 'MBProgressHUD', '~> 0.9.2'
 	pod 'QBImagePickerController', '~> 3.4.0'
+	pod 'RealmSwift', '~> 2.1.2'
 end
 
 # Pokertrol
