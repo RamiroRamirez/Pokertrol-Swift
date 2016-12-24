@@ -19,6 +19,8 @@
 		283C41E41E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */; };
 		283C41E81E0E38C3002A3654 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E71E0E38C3002A3654 /* Tournament.swift */; };
 		283C41E91E0E38C3002A3654 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E71E0E38C3002A3654 /* Tournament.swift */; };
+		283C41EB1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41EA1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift */; };
+		283C41EC1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41EA1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift */; };
 		2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
 		7B7390C143EFD385BFD2040F /* Pods_Pokertrol_Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC671246EAB7A994A03157F /* Pods_Pokertrol_Alpha.framework */; };
 		C9F2464B80AC640D1918FA36 /* Pods_Pokertrol_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */; };
@@ -33,6 +35,7 @@
 		283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-AppStore.plist"; sourceTree = "<group>"; };
 		283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTournamentsViewController.swift; sourceTree = "<group>"; };
 		283C41E71E0E38C3002A3654 /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		283C41EA1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTournamentMakerViewController.swift; sourceTree = "<group>"; };
 		2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FBE5C97852AE89406358FE5 /* Pods-Pokertrol-Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */,
+				283C41EA1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -362,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283C41EC1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */,
 				283C41E91E0E38C3002A3654 /* Tournament.swift in Sources */,
 				283C41E41E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
 				283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */,
@@ -372,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283C41EB1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */,
 				283C41E81E0E38C3002A3654 /* Tournament.swift in Sources */,
 				283C41E31E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
 				2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */,

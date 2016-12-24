@@ -55,7 +55,13 @@
                             <constraint firstItem="IrR-jl-PpJ" firstAttribute="leading" secondItem="GEf-Pl-Rbm" secondAttribute="leading" id="oNT-RK-XtK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6q6-56-7xx"/>
+                    <navigationItem key="navigationItem" id="6q6-56-7xx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mzf-d0-RTn">
+                            <connections>
+                                <segue destination="JR7-G9-3fY" kind="presentation" id="u6D-19-QoF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="IrR-jl-PpJ" id="4hq-Xg-YTJ"/>
                     </connections>
@@ -82,6 +88,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbj-oU-IdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="153" y="1657"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E6B-Bi-TaO">
+            <objects>
+                <navigationController id="JR7-G9-3fY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ds6-7W-Qt3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7no-ro-pAf" kind="relationship" relationship="rootViewController" id="fML-yR-pf3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rfm-MG-1lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="2436"/>
+        </scene>
+        <!--Tournament Maker View Controller-->
+        <scene sceneID="vl9-bQ-1Vr">
+            <objects>
+                <viewController id="7no-ro-pAf" customClass="PTTournamentMakerViewController" customModule="Pokertrol_Alpha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u8K-JY-qoF"/>
+                        <viewControllerLayoutGuide type="bottom" id="eNf-K4-x3j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mt5-eJ-iPo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lzs-8r-g9R">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XZL-IR-ZXg">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="7no-ro-pAf" id="C8d-Qa-z86"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JpR-32-5wV">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="7no-ro-pAf" id="Idw-Sw-c1E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMx-P5-m3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="3161"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d2w-YX-xjF">
