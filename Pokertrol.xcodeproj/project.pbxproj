@@ -12,6 +12,13 @@
 		283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C71E0E1F42002A3654 /* Main.storyboard */; };
 		283C41CD1E0E1F73002A3654 /* Pokertrol-Alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */; };
 		283C41D01E0E1F7B002A3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41CF1E0E1F7B002A3654 /* ViewController.swift */; };
+		283C41D31E0E2D1C002A3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41CF1E0E1F7B002A3654 /* ViewController.swift */; };
+		283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
+		283C41D71E0E2D1C002A3654 /* Pokertrol-Alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */; };
+		283C41D81E0E2D1C002A3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C71E0E1F42002A3654 /* Main.storyboard */; };
+		283C41D91E0E2D1C002A3654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C51E0E1F42002A3654 /* Assets.xcassets */; };
+		283C41DA1E0E2D1C002A3654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */; };
+		283C41E11E0E2E6B002A3654 /* Pokertrol-AppStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */; };
 		2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +28,20 @@
 		283C41C71E0E1F42002A3654 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-Alpha.plist"; sourceTree = "<group>"; };
 		283C41CF1E0E1F7B002A3654 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		283C41DE1E0E2D1C002A3654 /* Pokertrol-AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-AppStore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-AppStore.plist"; sourceTree = "<group>"; };
 		2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		283C41D51E0E2D1C002A3654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2848CFED1E0E1CF20039DB9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */,
+				283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */,
 			);
 			path = PList;
 			sourceTree = "<group>";
@@ -74,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */,
+				283C41DE1E0E2D1C002A3654 /* Pokertrol-AppStore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +110,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		283C41D11E0E2D1C002A3654 /* Pokertrol-AppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283C41DB1E0E2D1C002A3654 /* Build configuration list for PBXNativeTarget "Pokertrol-AppStore" */;
+			buildPhases = (
+				283C41D21E0E2D1C002A3654 /* Sources */,
+				283C41D51E0E2D1C002A3654 /* Frameworks */,
+				283C41D61E0E2D1C002A3654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pokertrol-AppStore";
+			productName = Pokertrol;
+			productReference = 283C41DE1E0E2D1C002A3654 /* Pokertrol-AppStore.app */;
+			productType = "com.apple.product-type.application";
+		};
 		2848CFEF1E0E1CF20039DB9C /* Pokertrol-Alpha */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol-Alpha" */;
@@ -119,8 +154,13 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ramram;
 				TargetAttributes = {
+					283C41D11E0E2D1C002A3654 = {
+						DevelopmentTeam = WEUMM3X4MB;
+						ProvisioningStyle = Manual;
+					};
 					2848CFEF1E0E1CF20039DB9C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WEUMM3X4MB;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -139,11 +179,23 @@
 			projectRoot = "";
 			targets = (
 				2848CFEF1E0E1CF20039DB9C /* Pokertrol-Alpha */,
+				283C41D11E0E2D1C002A3654 /* Pokertrol-AppStore */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		283C41D61E0E2D1C002A3654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283C41D71E0E2D1C002A3654 /* Pokertrol-Alpha.plist in Resources */,
+				283C41D81E0E2D1C002A3654 /* Main.storyboard in Resources */,
+				283C41D91E0E2D1C002A3654 /* Assets.xcassets in Resources */,
+				283C41DA1E0E2D1C002A3654 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2848CFEE1E0E1CF20039DB9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,12 +204,22 @@
 				283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */,
 				283C41C81E0E1F42002A3654 /* Assets.xcassets in Resources */,
 				283C41C91E0E1F42002A3654 /* LaunchScreen.storyboard in Resources */,
+				283C41E11E0E2E6B002A3654 /* Pokertrol-AppStore.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		283C41D21E0E2D1C002A3654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283C41D31E0E2D1C002A3654 /* ViewController.swift in Sources */,
+				283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2848CFEC1E0E1CF20039DB9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +232,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		283C41DC1E0E2D1C002A3654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-AppStore.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ramram.Pokertrol-AppStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5a5c3a7-8692-442b-9c6a-f9b1b72bafdb";
+				PROVISIONING_PROFILE_SPECIFIER = "Pokertrol-AppStore";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		283C41DD1E0E2D1C002A3654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-AppStore.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ramram.Pokertrol-AppStore";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5a5c3a7-8692-442b-9c6a-f9b1b72bafdb";
+				PROVISIONING_PROFILE_SPECIFIER = "Pokertrol-AppStore";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		2848D0001E0E1CF20039DB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -210,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -254,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -267,11 +363,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
 				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-Alpha.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramram.Pokertrol;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ramram.Pokertrol-Alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Pokertrol-Alpha-DEBUG";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,11 +379,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
 				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-Alpha.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramram.Pokertrol;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ramram.Pokertrol-Alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Pokertrol-Alpha-RELEASE";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -292,6 +394,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		283C41DB1E0E2D1C002A3654 /* Build configuration list for PBXNativeTarget "Pokertrol-AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283C41DC1E0E2D1C002A3654 /* Debug */,
+				283C41DD1E0E2D1C002A3654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2848CFEB1E0E1CF20039DB9C /* Build configuration list for PBXProject "Pokertrol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
