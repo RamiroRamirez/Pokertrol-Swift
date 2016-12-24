@@ -10,16 +10,18 @@
 		283C41C81E0E1F42002A3654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C51E0E1F42002A3654 /* Assets.xcassets */; };
 		283C41C91E0E1F42002A3654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */; };
 		283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C71E0E1F42002A3654 /* Main.storyboard */; };
-		283C41CD1E0E1F73002A3654 /* Pokertrol-Alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */; };
-		283C41D01E0E1F7B002A3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41CF1E0E1F7B002A3654 /* ViewController.swift */; };
-		283C41D31E0E2D1C002A3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41CF1E0E1F7B002A3654 /* ViewController.swift */; };
 		283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
 		283C41D71E0E2D1C002A3654 /* Pokertrol-Alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */; };
 		283C41D81E0E2D1C002A3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C71E0E1F42002A3654 /* Main.storyboard */; };
 		283C41D91E0E2D1C002A3654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C51E0E1F42002A3654 /* Assets.xcassets */; };
 		283C41DA1E0E2D1C002A3654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */; };
-		283C41E11E0E2E6B002A3654 /* Pokertrol-AppStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */; };
+		283C41E31E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */; };
+		283C41E41E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */; };
+		283C41E81E0E38C3002A3654 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E71E0E38C3002A3654 /* Tournament.swift */; };
+		283C41E91E0E38C3002A3654 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41E71E0E38C3002A3654 /* Tournament.swift */; };
 		2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
+		7B7390C143EFD385BFD2040F /* Pods_Pokertrol_Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC671246EAB7A994A03157F /* Pods_Pokertrol_Alpha.framework */; };
+		C9F2464B80AC640D1918FA36 /* Pods_Pokertrol_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,18 @@
 		283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283C41C71E0E1F42002A3654 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-Alpha.plist"; sourceTree = "<group>"; };
-		283C41CF1E0E1F7B002A3654 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		283C41DE1E0E2D1C002A3654 /* Pokertrol-AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-AppStore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		283C41E01E0E2E6B002A3654 /* Pokertrol-AppStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-AppStore.plist"; sourceTree = "<group>"; };
+		283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTournamentsViewController.swift; sourceTree = "<group>"; };
+		283C41E71E0E38C3002A3654 /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FBE5C97852AE89406358FE5 /* Pods-Pokertrol-Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha.debug.xcconfig"; sourceTree = "<group>"; };
+		48E110374BCA3565F3E23B31 /* Pods-Pokertrol-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-AppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-AppStore/Pods-Pokertrol-AppStore.release.xcconfig"; sourceTree = "<group>"; };
+		4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokertrol_AppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B8EED88C8EA8997711077A /* Pods-Pokertrol-Alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-Alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha.release.xcconfig"; sourceTree = "<group>"; };
+		D1CEFF8F5C46F7CCC7E2E2F9 /* Pods-Pokertrol-AppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-AppStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-AppStore/Pods-Pokertrol-AppStore.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC671246EAB7A994A03157F /* Pods_Pokertrol_Alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokertrol_Alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F2464B80AC640D1918FA36 /* Pods_Pokertrol_AppStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7390C143EFD385BFD2040F /* Pods_Pokertrol_Alpha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +85,24 @@
 		283C41CE1E0E1F7B002A3654 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				283C41CF1E0E1F7B002A3654 /* ViewController.swift */,
+				283C41E21E0E36F6002A3654 /* PTTournamentsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		283C41E51E0E382C002A3654 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		283C41E61E0E3899002A3654 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				283C41E71E0E38C3002A3654 /* Tournament.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2848CFE71E0E1CF20039DB9C = {
@@ -84,6 +110,8 @@
 			children = (
 				2848CFF21E0E1CF20039DB9C /* Pokertrol */,
 				2848CFF11E0E1CF20039DB9C /* Products */,
+				F131A9404DB09A0535975FCD /* Pods */,
+				7A7826036D3AEA7F6AE15760 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +127,34 @@
 		2848CFF21E0E1CF20039DB9C /* Pokertrol */ = {
 			isa = PBXGroup;
 			children = (
+				283C41E61E0E3899002A3654 /* Models */,
+				283C41E51E0E382C002A3654 /* Helpers */,
 				283C41CE1E0E1F7B002A3654 /* ViewControllers */,
 				283C41CB1E0E1F73002A3654 /* PList */,
 				283C41C41E0E1F42002A3654 /* Resources */,
 				2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */,
 			);
 			path = Pokertrol;
+			sourceTree = "<group>";
+		};
+		7A7826036D3AEA7F6AE15760 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC671246EAB7A994A03157F /* Pods_Pokertrol_Alpha.framework */,
+				4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F131A9404DB09A0535975FCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE5C97852AE89406358FE5 /* Pods-Pokertrol-Alpha.debug.xcconfig */,
+				A9B8EED88C8EA8997711077A /* Pods-Pokertrol-Alpha.release.xcconfig */,
+				D1CEFF8F5C46F7CCC7E2E2F9 /* Pods-Pokertrol-AppStore.debug.xcconfig */,
+				48E110374BCA3565F3E23B31 /* Pods-Pokertrol-AppStore.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 283C41DB1E0E2D1C002A3654 /* Build configuration list for PBXNativeTarget "Pokertrol-AppStore" */;
 			buildPhases = (
+				23BEE0A3DAEE72FF92E61848 /* [CP] Check Pods Manifest.lock */,
 				283C41D21E0E2D1C002A3654 /* Sources */,
 				283C41D51E0E2D1C002A3654 /* Frameworks */,
 				283C41D61E0E2D1C002A3654 /* Resources */,
+				1CB8858897F780CC6B5A7414 /* [CP] Embed Pods Frameworks */,
+				E529A579B53C97206A654FE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol-Alpha" */;
 			buildPhases = (
+				C7949C7D9FA81759D01AB084 /* [CP] Check Pods Manifest.lock */,
 				2848CFEC1E0E1CF20039DB9C /* Sources */,
 				2848CFED1E0E1CF20039DB9C /* Frameworks */,
 				2848CFEE1E0E1CF20039DB9C /* Resources */,
+				42C06EF2AD0D2C5B85C75F6A /* [CP] Embed Pods Frameworks */,
+				3909C32661965FE6DDFED1CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,22 +256,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283C41CD1E0E1F73002A3654 /* Pokertrol-Alpha.plist in Resources */,
 				283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */,
 				283C41C81E0E1F42002A3654 /* Assets.xcassets in Resources */,
 				283C41C91E0E1F42002A3654 /* LaunchScreen.storyboard in Resources */,
-				283C41E11E0E2E6B002A3654 /* Pokertrol-AppStore.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB8858897F780CC6B5A7414 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokertrol-AppStore/Pods-Pokertrol-AppStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23BEE0A3DAEE72FF92E61848 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3909C32661965FE6DDFED1CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42C06EF2AD0D2C5B85C75F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7949C7D9FA81759D01AB084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E529A579B53C97206A654FE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pokertrol-AppStore/Pods-Pokertrol-AppStore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		283C41D21E0E2D1C002A3654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283C41D31E0E2D1C002A3654 /* ViewController.swift in Sources */,
+				283C41E91E0E38C3002A3654 /* Tournament.swift in Sources */,
+				283C41E41E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
 				283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283C41D01E0E1F7B002A3654 /* ViewController.swift in Sources */,
+				283C41E81E0E38C3002A3654 /* Tournament.swift in Sources */,
+				283C41E31E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
 				2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +383,7 @@
 /* Begin XCBuildConfiguration section */
 		283C41DC1E0E2D1C002A3654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CEFF8F5C46F7CCC7E2E2F9 /* Pods-Pokertrol-AppStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
@@ -251,6 +401,7 @@
 		};
 		283C41DD1E0E2D1C002A3654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E110374BCA3565F3E23B31 /* Pods-Pokertrol-AppStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
@@ -361,6 +512,7 @@
 		};
 		2848D0031E0E1CF20039DB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBE5C97852AE89406358FE5 /* Pods-Pokertrol-Alpha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ramiro Ramirez Hernandez (9A8JDE7M9P)";
@@ -377,6 +529,7 @@
 		};
 		2848D0041E0E1CF20039DB9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B8EED88C8EA8997711077A /* Pods-Pokertrol-Alpha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
