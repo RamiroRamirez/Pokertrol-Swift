@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283C41C81E0E1F42002A3654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C51E0E1F42002A3654 /* Assets.xcassets */; };
+		283C41C91E0E1F42002A3654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */; };
+		283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283C41C71E0E1F42002A3654 /* Main.storyboard */; };
+		283C41CD1E0E1F73002A3654 /* Pokertrol-Alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = 283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */; };
+		283C41D01E0E1F7B002A3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C41CF1E0E1F7B002A3654 /* ViewController.swift */; };
 		2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */; };
-		2848CFF61E0E1CF20039DB9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848CFF51E0E1CF20039DB9C /* ViewController.swift */; };
-		2848CFF91E0E1CF20039DB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2848CFF71E0E1CF20039DB9C /* Main.storyboard */; };
-		2848CFFB1E0E1CF20039DB9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2848CFFA1E0E1CF20039DB9C /* Assets.xcassets */; };
-		2848CFFE1E0E1CF20039DB9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2848CFFC1E0E1CF20039DB9C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2848CFF01E0E1CF20039DB9C /* Pokertrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokertrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		283C41C51E0E1F42002A3654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		283C41C71E0E1F42002A3654 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pokertrol-Alpha.plist"; sourceTree = "<group>"; };
+		283C41CF1E0E1F7B002A3654 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokertrol-Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2848CFF51E0E1CF20039DB9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2848CFF81E0E1CF20039DB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2848CFFA1E0E1CF20039DB9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2848CFFD1E0E1CF20039DB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2848CFFF1E0E1CF20039DB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		283C41C41E0E1F42002A3654 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				283C41C51E0E1F42002A3654 /* Assets.xcassets */,
+				283C41C61E0E1F42002A3654 /* LaunchScreen.storyboard */,
+				283C41C71E0E1F42002A3654 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		283C41CB1E0E1F73002A3654 /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				283C41CC1E0E1F73002A3654 /* Pokertrol-Alpha.plist */,
+			);
+			path = PList;
+			sourceTree = "<group>";
+		};
+		283C41CE1E0E1F7B002A3654 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				283C41CF1E0E1F7B002A3654 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		2848CFE71E0E1CF20039DB9C = {
 			isa = PBXGroup;
 			children = (
@@ -46,7 +73,7 @@
 		2848CFF11E0E1CF20039DB9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2848CFF01E0E1CF20039DB9C /* Pokertrol.app */,
+				2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +81,10 @@
 		2848CFF21E0E1CF20039DB9C /* Pokertrol */ = {
 			isa = PBXGroup;
 			children = (
+				283C41CE1E0E1F7B002A3654 /* ViewControllers */,
+				283C41CB1E0E1F73002A3654 /* PList */,
+				283C41C41E0E1F42002A3654 /* Resources */,
 				2848CFF31E0E1CF20039DB9C /* AppDelegate.swift */,
-				2848CFF51E0E1CF20039DB9C /* ViewController.swift */,
-				2848CFF71E0E1CF20039DB9C /* Main.storyboard */,
-				2848CFFA1E0E1CF20039DB9C /* Assets.xcassets */,
-				2848CFFC1E0E1CF20039DB9C /* LaunchScreen.storyboard */,
-				2848CFFF1E0E1CF20039DB9C /* Info.plist */,
 			);
 			path = Pokertrol;
 			sourceTree = "<group>";
@@ -67,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2848CFEF1E0E1CF20039DB9C /* Pokertrol */ = {
+		2848CFEF1E0E1CF20039DB9C /* Pokertrol-Alpha */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol" */;
+			buildConfigurationList = 2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol-Alpha" */;
 			buildPhases = (
 				2848CFEC1E0E1CF20039DB9C /* Sources */,
 				2848CFED1E0E1CF20039DB9C /* Frameworks */,
@@ -79,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Pokertrol;
+			name = "Pokertrol-Alpha";
 			productName = Pokertrol;
-			productReference = 2848CFF01E0E1CF20039DB9C /* Pokertrol.app */;
+			productReference = 2848CFF01E0E1CF20039DB9C /* Pokertrol-Alpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2848CFEF1E0E1CF20039DB9C /* Pokertrol */,
+				2848CFEF1E0E1CF20039DB9C /* Pokertrol-Alpha */,
 			);
 		};
 /* End PBXProject section */
@@ -123,9 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2848CFFE1E0E1CF20039DB9C /* LaunchScreen.storyboard in Resources */,
-				2848CFFB1E0E1CF20039DB9C /* Assets.xcassets in Resources */,
-				2848CFF91E0E1CF20039DB9C /* Main.storyboard in Resources */,
+				283C41CD1E0E1F73002A3654 /* Pokertrol-Alpha.plist in Resources */,
+				283C41CA1E0E1F42002A3654 /* Main.storyboard in Resources */,
+				283C41C81E0E1F42002A3654 /* Assets.xcassets in Resources */,
+				283C41C91E0E1F42002A3654 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2848CFF61E0E1CF20039DB9C /* ViewController.swift in Sources */,
+				283C41D01E0E1F7B002A3654 /* ViewController.swift in Sources */,
 				2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2848CFF71E0E1CF20039DB9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2848CFF81E0E1CF20039DB9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2848CFFC1E0E1CF20039DB9C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2848CFFD1E0E1CF20039DB9C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2848D0001E0E1CF20039DB9C /* Debug */ = {
@@ -261,7 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Pokertrol/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-Alpha.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramram.Pokertrol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Pokertrol/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokertrol/PList/Pokertrol-Alpha.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramram.Pokertrol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,13 +301,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol" */ = {
+		2848D0021E0E1CF20039DB9C /* Build configuration list for PBXNativeTarget "Pokertrol-Alpha" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2848D0031E0E1CF20039DB9C /* Debug */,
 				2848D0041E0E1CF20039DB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
