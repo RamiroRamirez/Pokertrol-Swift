@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsU-x8-KVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="901"/>
+            <point key="canvasLocation" x="-780" y="946"/>
         </scene>
         <!--Tournaments View Controller-->
         <scene sceneID="6Wf-6c-vMl">
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tti-Km-EV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778.39999999999998" y="1656.521739130435"/>
+            <point key="canvasLocation" x="-779" y="1733"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vFd-NO-BpL">
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbj-oU-IdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="1657"/>
+            <point key="canvasLocation" x="153" y="1733"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E6B-Bi-TaO">
@@ -103,7 +103,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfm-MG-1lC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="2436"/>
+            <point key="canvasLocation" x="-779" y="2571"/>
         </scene>
         <!--Tournament Maker View Controller-->
         <scene sceneID="vl9-bQ-1Vr">
@@ -116,7 +116,84 @@
                     <view key="view" contentMode="scaleToFill" id="Mt5-eJ-iPo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hJT-Nf-uqh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PTTournamentMakerTitleCell" rowHeight="90" id="Hnp-mu-mJh" customClass="PTTournamentMakerTitleCell" customModule="Pokertrol_Alpha" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hnp-mu-mJh" id="ijF-nO-E7X">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor llena la información del torneo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNA-5M-dUT">
+                                                    <rect key="frame" x="8" y="8" width="359" height="73"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="JNA-5M-dUT" id="SD2-nY-Cfc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PTTournamentMakerOptionCell" rowHeight="80" id="shF-jn-sFT" customClass="PTTournamentMakerOptionCell" customModule="Pokertrol_Alpha" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="118" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shF-jn-sFT" id="Ed7-9U-svY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la modalidad del torneo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBY-Zb-KWm">
+                                                    <rect key="frame" x="8" y="8" width="359" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Modalidad del torneo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-4K-peL">
+                                                    <rect key="frame" x="8" y="41.5" width="359" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="iAg-4K-peL" secondAttribute="trailing" constant="8" id="0dD-rR-D1Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="PBY-Zb-KWm" secondAttribute="trailing" constant="8" id="AOs-WH-GCe"/>
+                                                <constraint firstItem="PBY-Zb-KWm" firstAttribute="leading" secondItem="Ed7-9U-svY" secondAttribute="leading" constant="8" id="YsG-QA-V2R"/>
+                                                <constraint firstItem="iAg-4K-peL" firstAttribute="leading" secondItem="Ed7-9U-svY" secondAttribute="leading" constant="8" id="sFn-O0-eS8"/>
+                                                <constraint firstItem="PBY-Zb-KWm" firstAttribute="top" secondItem="Ed7-9U-svY" secondAttribute="top" constant="8" id="vAP-RS-NL8"/>
+                                                <constraint firstAttribute="bottom" secondItem="iAg-4K-peL" secondAttribute="bottom" constant="8" id="zM3-Nn-X3A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="optionTextField" destination="iAg-4K-peL" id="2HL-tT-AlU"/>
+                                            <outlet property="optionTitleLabel" destination="PBY-Zb-KWm" id="olE-V5-4bN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Im-hgs">
+                                <rect key="frame" x="0.0" y="667" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="V9u-3M-1yz"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eNf-K4-x3j" firstAttribute="top" secondItem="v6a-Im-hgs" secondAttribute="bottom" constant="-150" id="2NO-7I-4G1"/>
+                            <constraint firstItem="v6a-Im-hgs" firstAttribute="leading" secondItem="Mt5-eJ-iPo" secondAttribute="leading" id="7Bf-ek-3AY"/>
+                            <constraint firstAttribute="trailing" secondItem="v6a-Im-hgs" secondAttribute="trailing" id="ACa-8S-I12"/>
+                            <constraint firstItem="hJT-Nf-uqh" firstAttribute="leading" secondItem="Mt5-eJ-iPo" secondAttribute="leading" id="GSB-MB-jDt"/>
+                            <constraint firstAttribute="trailing" secondItem="hJT-Nf-uqh" secondAttribute="trailing" id="PCe-mA-691"/>
+                            <constraint firstItem="eNf-K4-x3j" firstAttribute="top" secondItem="hJT-Nf-uqh" secondAttribute="bottom" id="opH-35-iXd"/>
+                            <constraint firstItem="hJT-Nf-uqh" firstAttribute="top" secondItem="Mt5-eJ-iPo" secondAttribute="top" id="yX3-A8-40N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lzs-8r-g9R">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XZL-IR-ZXg">
@@ -130,10 +207,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hJT-Nf-uqh" id="Mzc-sP-PBl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMx-P5-m3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="3161"/>
+            <point key="canvasLocation" x="-780" y="3414"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d2w-YX-xjF">
@@ -169,7 +249,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CV-L7-pdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="901"/>
+            <point key="canvasLocation" x="153" y="946"/>
         </scene>
         <!--Third-->
         <scene sceneID="oIK-26-vSx">
