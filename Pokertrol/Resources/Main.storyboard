@@ -176,6 +176,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7no-ro-pAf" id="Q4Q-2U-uHO"/>
+                                    <outlet property="delegate" destination="7no-ro-pAf" id="6LU-Dz-1hY"/>
+                                </connections>
                             </tableView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Im-hgs">
                                 <rect key="frame" x="0.0" y="667" width="375" height="150"/>
@@ -209,6 +213,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hJT-Nf-uqh" id="Mzc-sP-PBl"/>
+                        <outlet property="tableViewBottomConstraint" destination="opH-35-iXd" id="8mX-FO-sVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMx-P5-m3P" userLabel="First Responder" sceneMemberID="firstResponder"/>

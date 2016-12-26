@@ -1,4 +1,4 @@
-//
+	//
 //  PTTournamentMakerOptionCell.swift
 //  Pokertrol
 //
@@ -15,15 +15,33 @@ class PTTournamentMakerOptionCell					: UITableViewCell {
 	@IBOutlet private weak var optionTitleLabel		: UILabel?
 	@IBOutlet private weak var optionTextField		: UITextField?
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+	// MARK: - Variables
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+	var menuOption 									: TournamentOptions?
+	var endEditingBlock								: (() -> Void)?
 
-        // Configure the view for the selected state
-    }
+    // MARK: - Cell Setup
 
+	func setupCell(menuOption: TournamentOptions, endEditingBlock: (() -> Void)?) {
+		self.optionTitleLabel?.text = menuOption.title()
+		self.optionTextField?.placeholder = menuOption.placeholder()
+		self.menuOption = menuOption
+		self.endEditingBlock = endEditingBlock
+		if let _keyboardType = menuOption.keyboardType() {
+			self.optionTextField?.keyboardType = _keyboardType
+		}
+		self.optionTextField?.delegate = self
+	}
+}
+
+extension PTTournamentMakerOptionCell				: UITextFieldDelegate {
+
+	func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+ 		if (self.menuOption?.keyboardType() == nil) {
+			self.endEditingBlock?()
+			// show data picker
+			return false
+		}
+		return true
+	}
 }

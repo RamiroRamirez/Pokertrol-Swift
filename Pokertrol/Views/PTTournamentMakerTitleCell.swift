@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DKHelper
 
 class PTTournamentMakerTitleCell			: UITableViewCell {
 
@@ -14,15 +15,9 @@ class PTTournamentMakerTitleCell			: UITableViewCell {
 
 	@IBOutlet private weak var titleLabel	: UILabel?
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    // MARK: - Setup Method
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+	func setupCell() {
+		self.titleLabel?.text = L("Title.tournament.maker")
+	}
 }
