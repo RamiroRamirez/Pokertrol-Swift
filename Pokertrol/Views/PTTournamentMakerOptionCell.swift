@@ -19,14 +19,16 @@ class PTTournamentMakerOptionCell					: UITableViewCell {
 
 	var menuOption 									: TournamentOptions?
 	var endEditingBlock								: (() -> Void)?
+	var togglePickerViewBlock						: ((_ show: Bool) -> Void)?
 
     // MARK: - Cell Setup
 
-	func setupCell(menuOption: TournamentOptions, endEditingBlock: (() -> Void)?) {
+	func setupCell(menuOption: TournamentOptions, endEditingBlock: (() -> Void)?, togglePickerViewBlock: ((_ show: Bool) -> Void)?) {
 		self.optionTitleLabel?.text = menuOption.title()
 		self.optionTextField?.placeholder = menuOption.placeholder()
 		self.menuOption = menuOption
 		self.endEditingBlock = endEditingBlock
+		self.togglePickerViewBlock = togglePickerViewBlock
 		if let _keyboardType = menuOption.keyboardType() {
 			self.optionTextField?.keyboardType = _keyboardType
 		}
@@ -40,6 +42,7 @@ extension PTTournamentMakerOptionCell				: UITextFieldDelegate {
  		if (self.menuOption?.keyboardType() == nil) {
 			self.endEditingBlock?()
 			// show data picker
+			self.togglePickerViewBlock?(true)
 			return false
 		}
 		return true

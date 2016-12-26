@@ -6,10 +6,19 @@
 //  Copyright © 2016 ramram. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+// MARK: - Enum containing cell identifiers
 
 enum CellIdentifiers: String {
 
 	case tournamentMakerTitleCell 	= "PTTournamentMakerTitleCell"
 	case tournamentMakerOptionCell	= "PTTournamentMakerOptionCell"
 }
+
+// MARK: - Struct containing custom cells height
+
+struct CellHeights {
+	static let tournamentMakerCells	= CGFloat(80)
+}
+

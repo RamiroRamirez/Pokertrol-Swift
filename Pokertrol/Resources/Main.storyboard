@@ -125,7 +125,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hnp-mu-mJh" id="ijF-nO-E7X">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor llena la información del torneo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNA-5M-dUT">
@@ -145,7 +145,7 @@
                                         <rect key="frame" x="0.0" y="118" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shF-jn-sFT" id="Ed7-9U-svY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la modalidad del torneo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBY-Zb-KWm">
@@ -212,6 +212,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pickerBottomConstraint" destination="2NO-7I-4G1" id="3qT-IT-CNn"/>
+                        <outlet property="pickerViewHeightConstraint" destination="V9u-3M-1yz" id="oZ6-qR-p3M"/>
                         <outlet property="tableView" destination="hJT-Nf-uqh" id="Mzc-sP-PBl"/>
                         <outlet property="tableViewBottomConstraint" destination="opH-35-iXd" id="8mX-FO-sVd"/>
                     </connections>

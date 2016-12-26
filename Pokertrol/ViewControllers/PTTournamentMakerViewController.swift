@@ -9,7 +9,7 @@
 import UIKit
 import DKHelper
 
-enum TournamentOptions			: Int {
+enum TournamentOptions					: Int {
 
 	case makerTitle = 0
 	case modality
@@ -62,12 +62,14 @@ enum TournamentOptions			: Int {
 	}
 }
 
-class PTTournamentMakerViewController					: UIViewController {
+class PTTournamentMakerViewController						: UIViewController {
 
 	// MARK: - Outlets
 
-	@IBOutlet private weak var tableView				: UITableView?
-	@IBOutlet private weak var tableViewBottomConstraint: NSLayoutConstraint?
+	@IBOutlet private weak var tableView					: UITableView?
+	@IBOutlet private weak var tableViewBottomConstraint	: NSLayoutConstraint?
+	@IBOutlet private weak var pickerViewHeightConstraint	: NSLayoutConstraint?
+	@IBOutlet private weak var pickerBottomConstraint		: NSLayoutConstraint?
 
 	// MARK: - View Life Cycle
 
@@ -76,11 +78,30 @@ class PTTournamentMakerViewController					: UIViewController {
 
 		NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 		NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+		let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap(_:)))
+		self.view.addGestureRecognizer(tapRecognizer)
     }
+
+	deinit {
+		NotificationCenter.default.removeObserver(NSNotification.Name.UIKeyboardWillShow)
+		NotificationCenter.default.removeObserver(NSNotification.Name.UIKeyboardWillHide)
+	}
 
 	// MARK: - Helpers
 
 	func endEditing() {
+		self.view.endEditing(true)
+	}
+
+	func togglePickerView(show: Bool) {
+		self.pickerBottomConstraint?.constant = ((show == true) ? 0 : -150)
+		UIView.animate(withDuration: 0.3) { 
+			self.view.layoutIfNeeded()
+		}
+	}
+
+	func didTap(_ sender: UITapGestureRecognizer) {
+		self.togglePickerView(show: false)
 		self.view.endEditing(true)
 	}
 
@@ -90,17 +111,18 @@ class PTTournamentMakerViewController					: UIViewController {
 		}
 	}
 
+
 	func keyboardWillHide(notification: NSNotification) {
 		self.tableViewBottomConstraint?.constant = 0
 	}
 
 	// MARK: - Actions
 
-	@IBAction func cancelButtonPressed(_ sender: Any) {
+	@IBAction private func cancelButtonPressed(_ sender: Any) {
 		self.dismiss(animated: true, completion: nil)
 	}
 
-	@IBAction func doneButtonPressed(_ sender: Any) {
+	@IBAction private func doneButtonPressed(_ sender: Any) {
 		self.dismiss(animated: true, completion: nil)
 	}
 }
@@ -127,7 +149,7 @@ extension PTTournamentMakerViewController: UITableViewDelegate, UITableViewDataS
 			guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.tournamentMakerOptionCell.rawValue) as? PTTournamentMakerOptionCell else {
 				return PTTournamentMakerOptionCell()
 			}
-			cell.setupCell(menuOption: menuOption, endEditingBlock: self.endEditing)
+			cell.setupCell(menuOption: menuOption, endEditingBlock: self.endEditing, togglePickerViewBlock: self.togglePickerView)
 			return cell
 		}
 
@@ -148,6 +170,6 @@ extension PTTournamentMakerViewController: UITableViewDelegate, UITableViewDataS
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 80
+		return CellHeights.tournamentMakerCells
 	}
 }
