@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -125,7 +126,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hnp-mu-mJh" id="ijF-nO-E7X">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor llena la información del torneo " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNA-5M-dUT">
@@ -145,7 +146,7 @@
                                         <rect key="frame" x="0.0" y="118" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shF-jn-sFT" id="Ed7-9U-svY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona la modalidad del torneo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBY-Zb-KWm">
@@ -181,21 +182,57 @@
                                     <outlet property="delegate" destination="7no-ro-pAf" id="6LU-Dz-1hY"/>
                                 </connections>
                             </tableView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Im-hgs">
-                                <rect key="frame" x="0.0" y="667" width="375" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MkR-B8-qfQ" customClass="PTPickerContainerView" customModule="Pokertrol_Alpha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="487" width="375" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRi-Gs-ceT">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Done"/>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NB9-C8-On8">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="137"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="137" id="Se4-Iu-CmC"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Uq-N9-0Qt">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="137"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="504475102.01366001">
+                                            <!--2016-12-26 19:58:22 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="V9u-3M-1yz"/>
+                                    <constraint firstItem="kRi-Gs-ceT" firstAttribute="top" secondItem="MkR-B8-qfQ" secondAttribute="top" id="1V9-K3-I3C"/>
+                                    <constraint firstItem="0Uq-N9-0Qt" firstAttribute="top" secondItem="kRi-Gs-ceT" secondAttribute="bottom" id="BN3-RO-k6O"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Uq-N9-0Qt" secondAttribute="bottom" id="Dbo-u7-M1B"/>
+                                    <constraint firstAttribute="bottom" secondItem="NB9-C8-On8" secondAttribute="bottom" id="KlD-5h-Cvs"/>
+                                    <constraint firstAttribute="trailing" secondItem="NB9-C8-On8" secondAttribute="trailing" id="Lge-X8-kgc"/>
+                                    <constraint firstItem="0Uq-N9-0Qt" firstAttribute="leading" secondItem="MkR-B8-qfQ" secondAttribute="leading" id="Ng8-qP-ZVk"/>
+                                    <constraint firstAttribute="trailing" secondItem="kRi-Gs-ceT" secondAttribute="trailing" id="SAL-1x-mRw"/>
+                                    <constraint firstAttribute="height" constant="180" id="TZO-8P-spn"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Uq-N9-0Qt" secondAttribute="trailing" id="gqI-aO-uds"/>
+                                    <constraint firstItem="NB9-C8-On8" firstAttribute="leading" secondItem="MkR-B8-qfQ" secondAttribute="leading" id="njr-mg-Sxe"/>
+                                    <constraint firstItem="kRi-Gs-ceT" firstAttribute="width" secondItem="MkR-B8-qfQ" secondAttribute="width" multiplier="1/3" id="qUu-oR-ZgC"/>
+                                    <constraint firstItem="NB9-C8-On8" firstAttribute="height" secondItem="0Uq-N9-0Qt" secondAttribute="height" id="tFK-EJ-7qA"/>
                                 </constraints>
-                            </pickerView>
+                                <connections>
+                                    <outlet property="datePickerView" destination="0Uq-N9-0Qt" id="zFI-tK-6ep"/>
+                                    <outlet property="doneButton" destination="kRi-Gs-ceT" id="9yY-JO-jDr"/>
+                                    <outlet property="pickerView" destination="NB9-C8-On8" id="yYA-ID-y1O"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eNf-K4-x3j" firstAttribute="top" secondItem="v6a-Im-hgs" secondAttribute="bottom" constant="-150" id="2NO-7I-4G1"/>
-                            <constraint firstItem="v6a-Im-hgs" firstAttribute="leading" secondItem="Mt5-eJ-iPo" secondAttribute="leading" id="7Bf-ek-3AY"/>
-                            <constraint firstAttribute="trailing" secondItem="v6a-Im-hgs" secondAttribute="trailing" id="ACa-8S-I12"/>
+                            <constraint firstItem="eNf-K4-x3j" firstAttribute="top" secondItem="MkR-B8-qfQ" secondAttribute="bottom" id="2EB-L0-pL6"/>
                             <constraint firstItem="hJT-Nf-uqh" firstAttribute="leading" secondItem="Mt5-eJ-iPo" secondAttribute="leading" id="GSB-MB-jDt"/>
                             <constraint firstAttribute="trailing" secondItem="hJT-Nf-uqh" secondAttribute="trailing" id="PCe-mA-691"/>
+                            <constraint firstItem="MkR-B8-qfQ" firstAttribute="leading" secondItem="Mt5-eJ-iPo" secondAttribute="leading" id="gKf-Ai-Qxv"/>
                             <constraint firstItem="eNf-K4-x3j" firstAttribute="top" secondItem="hJT-Nf-uqh" secondAttribute="bottom" id="opH-35-iXd"/>
+                            <constraint firstAttribute="trailing" secondItem="MkR-B8-qfQ" secondAttribute="trailing" id="tFU-ms-xST"/>
                             <constraint firstItem="hJT-Nf-uqh" firstAttribute="top" secondItem="Mt5-eJ-iPo" secondAttribute="top" id="yX3-A8-40N"/>
                         </constraints>
                     </view>
@@ -212,15 +249,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pickerBottomConstraint" destination="2NO-7I-4G1" id="3qT-IT-CNn"/>
-                        <outlet property="pickerViewHeightConstraint" destination="V9u-3M-1yz" id="oZ6-qR-p3M"/>
+                        <outlet property="pickerBottomConstraint" destination="2EB-L0-pL6" id="72h-PQ-LMY"/>
+                        <outlet property="pickerViewHeightConstraint" destination="TZO-8P-spn" id="FVe-1q-IW8"/>
                         <outlet property="tableView" destination="hJT-Nf-uqh" id="Mzc-sP-PBl"/>
                         <outlet property="tableViewBottomConstraint" destination="opH-35-iXd" id="8mX-FO-sVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMx-P5-m3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-780" y="3414"/>
+            <point key="canvasLocation" x="-780" y="3413.3433283358322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d2w-YX-xjF">

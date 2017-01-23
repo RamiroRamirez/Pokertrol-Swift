@@ -28,6 +28,8 @@
 		28CEE01E1E0F4F4F00CC1D0A /* PTTournamentMakerOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEE01C1E0F4F4F00CC1D0A /* PTTournamentMakerOptionCell.swift */; };
 		28CEE0201E1062D100CC1D0A /* PTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEE01F1E1062D100CC1D0A /* PTConstants.swift */; };
 		28CEE0211E1062D100CC1D0A /* PTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEE01F1E1062D100CC1D0A /* PTConstants.swift */; };
+		28F44A071E11AE5300811953 /* PTPickerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F44A061E11AE5300811953 /* PTPickerContainerView.swift */; };
+		28F44A081E11AE5300811953 /* PTPickerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F44A061E11AE5300811953 /* PTPickerContainerView.swift */; };
 		7B7390C143EFD385BFD2040F /* Pods_Pokertrol_Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC671246EAB7A994A03157F /* Pods_Pokertrol_Alpha.framework */; };
 		C9F2464B80AC640D1918FA36 /* Pods_Pokertrol_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,7 @@
 		28CEE0191E0F4F0600CC1D0A /* PTTournamentMakerTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTournamentMakerTitleCell.swift; sourceTree = "<group>"; };
 		28CEE01C1E0F4F4F00CC1D0A /* PTTournamentMakerOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTTournamentMakerOptionCell.swift; sourceTree = "<group>"; };
 		28CEE01F1E1062D100CC1D0A /* PTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTConstants.swift; sourceTree = "<group>"; };
+		28F44A061E11AE5300811953 /* PTPickerContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTPickerContainerView.swift; sourceTree = "<group>"; };
 		2FBE5C97852AE89406358FE5 /* Pods-Pokertrol-Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-Alpha/Pods-Pokertrol-Alpha.debug.xcconfig"; sourceTree = "<group>"; };
 		48E110374BCA3565F3E23B31 /* Pods-Pokertrol-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokertrol-AppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pokertrol-AppStore/Pods-Pokertrol-AppStore.release.xcconfig"; sourceTree = "<group>"; };
 		4E3F86C3BDF8584F005E2C32 /* Pods_Pokertrol_AppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokertrol_AppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +160,7 @@
 			children = (
 				28CEE0191E0F4F0600CC1D0A /* PTTournamentMakerTitleCell.swift */,
 				28CEE01C1E0F4F4F00CC1D0A /* PTTournamentMakerOptionCell.swift */,
+				28F44A061E11AE5300811953 /* PTPickerContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +396,7 @@
 				283C41EC1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */,
 				283C41E91E0E38C3002A3654 /* Tournament.swift in Sources */,
 				283C41E41E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
+				28F44A081E11AE5300811953 /* PTPickerContainerView.swift in Sources */,
 				283C41D41E0E2D1C002A3654 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +411,7 @@
 				283C41EB1E0E4DE6002A3654 /* PTTournamentMakerViewController.swift in Sources */,
 				283C41E81E0E38C3002A3654 /* Tournament.swift in Sources */,
 				283C41E31E0E36F6002A3654 /* PTTournamentsViewController.swift in Sources */,
+				28F44A071E11AE5300811953 /* PTPickerContainerView.swift in Sources */,
 				2848CFF41E0E1CF20039DB9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
